@@ -1,0 +1,31 @@
+*{
+  background-color: antiquewhite;
+  color:black;
+}
+.parent{
+  
+  width:200px;
+  display: flex;
+  flex-wrap:wrap;
+}
+.card img{
+  height: 100px;
+  width:100px;
+  border-radius: 50%;
+  padding-left: 30px;
+  /* margin-left: 30px; */
+}
+.card{
+  width: 200px;
+  border: 1px solid black;
+  text-align: center;
+  border-color: burlywood;
+  border-radius: 8px;
+}
+.card button{
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 8px;
+  font-size: 20px;
+  box-shadow: aquamarine;
+}

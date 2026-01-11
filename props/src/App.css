@@ -1,0 +1,16 @@
+*{
+    background-color: red;
+    color:black;
+  }
+  .parent{
+    height: 200px;
+    width:200px;
+  }
+  .card img{
+    height: 30px;
+  }
+  .card{
+    width: 300px;
+    height: 200px;
+    border: 3px solid black;
+  }
