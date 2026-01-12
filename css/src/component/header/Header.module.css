@@ -1,0 +1,10 @@
+.header{
+    width:100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+.btn{
+    background-color: red;
+    border-radius: 10px;
+}
