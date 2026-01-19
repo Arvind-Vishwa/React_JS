@@ -20,17 +20,23 @@ const Header = () => {
         
       </div>
       <form onSubmit={handleSubmit}>
-        <input
+        <textarea
         type='text'
         placeholder='add notes'
         value={name}
         onChange={(e)=>{setName(e.target.value); }}
+        rows={10}
+        cols={50}
         />
         <button>Add</button>
       </form>
       {
         show.map(function(s,id){
-            return <h2 key={id}>{s}</h2>
+            return <div className='card' key={id} >
+              <div className='card-text'>
+                <h2>{s}</h2>
+              </div>
+            </div>
         })
       }
 
