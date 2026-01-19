@@ -1,0 +1,13 @@
+.card{
+    background-image: url('https://cdn.pixabay.com/photo/2017/03/18/17/46/notepad-2154581_640.png');
+    position: relative;
+    height: 400px;
+    width: 600px;
+}
+.card-text{
+    position: absolute;
+    height: 50px;
+    color:black;
+    top: 200px;
+    left: 100px;
+}
