@@ -1,8 +1,13 @@
-# React + Vite
+# Local storage store the value in String
+# four method  --->
+# localStorage.clear()  --> clear all the localStorage
+# localStorage.setItem()  --> takes the two input like ("user","value");
+# localStorage.getItem()  --> ("user");
+# localStorage.removeItem()  -- > remove he single item
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+If we use a array of object or simply a object
+# const user={name:"Arvind"}  --> it converted toatlly into string
+# "name":"Arvind"   by JSON.Stringyfy method
+# and save into the string format if we have to retrive it then again convert into the object --> 
+# JSON.parse(user);
