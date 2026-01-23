@@ -1,8 +1,19 @@
-# React + Vite
+# UseEffect
+useEffect(function(){
+     console.log("useffect called");
+})
+---> In this I ignore the dependency so useEffect will call again and again If 
+any state change
+--> I can make multiple useEffect
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# with dependency
+useEffect(function(){
+     console.log("useffect called");
+},[])
+--> It is default which run one times
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# state as input
+useEffect(function(){
+     console.log("useffect called");
+},[num])
+--> here num is useState when ever state change useEffect run
