@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react'
 const App = () => {
   const [userdata,setUserData]=useState([]);
   const [index,setIndex]=useState(1);
+  
   const getData=async ()=>{
     const res=await axios.get(`https://picsum.photos/v2/list?page=${index}&limit=30`);
     // console.log(res.data);
