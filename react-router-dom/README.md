@@ -1,8 +1,29 @@
-# React + Vite
+# Router
+## Type of Router
+    1. Browser Router
+    2. Memory Router
+    3. Static Router
+    4. Hash Router
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Installation
+    npm i react-router-dom
 
-Currently, two official plugins are available:
+* React doesn't provide any Inbuilt router.Mostly used is Browser Router
+* wrap your APP in Browser Router 
+* <BrowserRouter>
+* <App>
+* </BrowserRouter>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Routes
+It basically container where all routes should placed
+## Route
+It is particular route contain in multiple container *Routes*
+        <div>
+            <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/about' element={<About/>}/>
+            </Routes>
+        </div>
+
+## Anchor tag replace it Link
+        <Link to=''>Home</Link>
