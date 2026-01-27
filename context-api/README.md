@@ -1,8 +1,49 @@
-# React + Vite
+# Context API
+1. Create the Data
+2. Provide the Data
+3. Use the Data
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## To Use It Firstly 
+    Wrap the App.jsx with Context API data
+    <ThemeContext>
+      <App />
+    </ThemeContext>
 
-Currently, two official plugins are available:
+    In ThemeContext.jsx use it -->
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+    const ThemeContext = (props) =>     {
+    return (
+        <div>
+      {props.children}
+        </div>
+     )
+    }
+
+## After this --> Provide Data Every One
+
+    import { createContext } from 'react'
+    export const ThemeContextData=createContext();
+    const ThemeContext = (props) => {
+    return (
+            <div>
+            <ThemeContextData. value='Arvind'>
+                {props.children}
+            </ThemeContextData. Provider>
+            
+            </div>
+        )
+        }
+
+## USE it data
+        import { ThemeContextData } from '../Context/ThemeContext';
+        const Navbar = (props) => {
+            const data=useContext(ThemeContextData);
+            console.log(data);
+        return (
+            <div className='navbar'>
+            <h2>{data}</h2>
+            <Nav2 theme={props.theme}/>
+            </div>
+        )
+        }
+
