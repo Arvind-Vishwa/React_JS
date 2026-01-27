@@ -1,0 +1,11 @@
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px;
+  align-items: center;
+  background-color: burlywood;
+}
+.nav{
+  display: flex;
+  gap:9px;
+}
